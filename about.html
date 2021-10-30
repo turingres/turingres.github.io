@@ -1,0 +1,77 @@
+---
+layout: default
+section_id: about
+
+publications:
+  - title: 'When Hashing Met Matching: Efficient spatio-temporal search for ridesharing'
+    abstract: 'This work introduced the powerful AI technique of Locality Senitive Hashing (widely used in several engineering disciplines)
+      to mobility research. Efficient high-dimensional search technology developed in this paper aids real-time urban-scale mobility optimization.'
+    conference: AAAI Conference on Artificial Intelligence, 2021
+    link: https://ojs.aaai.org/index.php/AAAI/article/view/16081
+  - title: Edge Weighted Online Windowed Matching
+    abstract: 'This work proposed a novel online algorithmic model to study real-time decision making in matching markets
+      such as mobility platforms. The model and algorithmic techniques from this paper have generated a lot of research interest in the area.'
+    journal: Forthcoming in Mathematics of Operations Research
+    conference: ACM Conference on Economics and Computation, 2019
+    link: https://dl.acm.org/doi/abs/10.1145/3328526.3329573
+
+---
+
+<div class='two spacing'></div>
+
+<div class='full'>
+  <div class='row'>
+    <div class='medium-12 columns'>
+      <h4 style='color: #999'>Who We Are</h4>
+      <h2>We are a "Science-powered Technology" company.</h2>
+      <div class='spacing'></div>
+      <p style="color:black;"><big><big>Mobility is a fundamental social, economic, environmental and technological challenge.
+        We are tackling this challenge head-on through science.</big></big></p>
+      <div class='spacing'></div>
+      <p style="color:black;"><big><big>Our innovations span and synthesize scientific disciplines such as Artificial Intelligence,
+        Operations Research, and Algorithms.
+        And we take our innovations out of the lab to build a disruptive new mobility technology.</big></big></p>
+      <div class='spacing'></div>
+      <p style="color:black;"><big><big>Apart from building the pillars of our technology, our research also contribute to advance scientific knowledge.
+        <br/> Check out some of our publications below.</big></big></p>
+    </div>
+  </div>
+</div>
+
+<div class='full'>
+  <div class='row'>
+    <h4 style='color: #999'>Sample Publications</h4>
+  </div>
+</div>
+
+{% for publication in page.publications %}
+  <div class='full'>
+    <div class='row'>
+      <div class='large-6 columns'>
+        <h3>{{publication.title}}</h3>
+        <div class='spacing'></div>
+        <p> <big> {{publication.abstract}} </big> </p>
+      </div>
+      <div class='large-6 columns'>
+        <div class='two spacing'></div>
+        <ul class='info'>
+          {% if publication.journal %}
+            <li style="color:black;">
+              <big> <strong>Journal</strong>: {{publication.journal}} </big>
+            </li>
+          {% endif %}
+          {% if publication.conference %}
+            <li style="color:black;">
+              <big> <strong>Conference</strong>: {{publication.conference}} </big>
+            </li>
+          {% endif %}
+        </ul>
+        <div class='two spacing'></div>
+        <a target='_blank' class='button small' href={{publication.link}}>View Publication</a>
+      </div>
+    </div>
+  </div>
+  <div class='two spacing'></div>
+{% endfor %}
+
+<div class='four spacing'></div>
