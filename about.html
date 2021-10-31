@@ -1,23 +1,100 @@
----
-layout: default
-section_id: about
+<!DOCTYPE html>
+<html>
 
-publications:
-  - title: 'When Hashing Met Matching: Efficient spatio-temporal search for ridesharing'
-    abstract: 'This work introduced the powerful AI technique of Locality Senitive Hashing (widely used in several engineering disciplines)
-      to mobility research. Efficient high-dimensional search technology developed in this paper aids real-time urban-scale mobility optimization.'
-    conference: AAAI Conference on Artificial Intelligence, 2021
-    link: https://ojs.aaai.org/index.php/AAAI/article/view/16081
-  - title: Edge Weighted Online Windowed Matching
-    abstract: 'This work proposed a novel online algorithmic model to study real-time decision making in matching markets
-      such as mobility platforms. The model and algorithmic techniques from this paper have generated a lot of research interest in the area.'
-    journal: Forthcoming in Mathematics of Operations Research
-    conference: ACM Conference on Economics and Computation, 2019
-    link: https://dl.acm.org/doi/abs/10.1145/3328526.3329573
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
----
+  <title>Turing Research</title>
+  <meta name="description" content="Turing Research Inc.
+">
 
-<div class='two spacing'></div>
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/fontello.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="icon" href="/images/favicon.png">
+
+  <script src="/javascripts/libs.js" type="text/javascript"></script>
+  <script>
+    // terrificjs bootstrap
+    (function($) {
+        $(document).ready(function() {
+            var $page = $('body');
+            var config = {
+              dependencyPath: {
+                plugin: 'javascripts/'
+              }
+            }
+            var application = new Tc.Application($page, config);
+            application.registerModules();
+            application.start();
+        });
+    })(Tc.$);
+  </script>
+  <link href="http://fonts.googleapis.com/css?family=Raleway:400,700,300" media="screen" rel="stylesheet" type="text/css" />
+  <script src="/javascripts/masonry.pkgd.js" type="text/javascript"></script>
+  <script src="/javascripts/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+  <script src="/javascripts/slick.min.js" type="text/javascript"></script>
+
+  <link rel="canonical" href="/about.html">
+  <link rel="alternate" type="application/rss+xml" title="Turing Research" href="/feed.xml" />
+</head>
+
+
+  <body>
+
+    <a href="" id="top"></a>
+<div class='contain-to-grid sticky'>
+  <nav class='top-bar' data-options='sticky_on: large' data-topbar=''>
+    <ul class='title-area'>
+      <li class='name'>
+        <h1>
+          <a href="/index.html">
+            <img alt="" src="/images/logo.png" />
+          </a>
+        </h1>
+      </li>
+      <li class='toggle-topbar menu-icon'>
+        <a href='#'>Menu</a>
+      </li>
+    </ul>
+    <section class='top-bar-section'>
+      <ul class="right">
+        
+          
+
+          
+            <li class="">
+              <a href="/index.html">Home</a>
+            </li>
+          
+        
+          
+
+          
+            <li class="active">
+              <a href="/about.html">About</a>
+            </li>
+          
+        
+          
+
+          
+            <li class="">
+              <a href="/contact.html">Contact</a>
+            </li>
+          
+        
+      </ul>
+    </section>
+  </nav>
+</div>
+
+
+    <div id='main' role='main'>
+      <div class='two spacing'></div>
 
 <div class='full'>
   <div class='row'>
@@ -44,34 +121,96 @@ publications:
   </div>
 </div>
 
-{% for publication in page.publications %}
+
   <div class='full'>
     <div class='row'>
       <div class='large-6 columns'>
-        <h3>{{publication.title}}</h3>
+        <h3>When Hashing Met Matching: Efficient spatio-temporal search for ridesharing</h3>
         <div class='spacing'></div>
-        <p> <big> {{publication.abstract}} </big> </p>
+        <p> <big> This work introduced the powerful AI technique of Locality Senitive Hashing (widely used in several engineering disciplines) to mobility research. Efficient high-dimensional search technology developed in this paper aids real-time urban-scale mobility optimization. </big> </p>
       </div>
       <div class='large-6 columns'>
         <div class='two spacing'></div>
         <ul class='info'>
-          {% if publication.journal %}
+          
+          
             <li style="color:black;">
-              <big> <strong>Journal</strong>: {{publication.journal}} </big>
+              <big> <strong>Conference</strong>: AAAI Conference on Artificial Intelligence, 2021 </big>
             </li>
-          {% endif %}
-          {% if publication.conference %}
-            <li style="color:black;">
-              <big> <strong>Conference</strong>: {{publication.conference}} </big>
-            </li>
-          {% endif %}
+          
         </ul>
         <div class='two spacing'></div>
-        <a target='_blank' class='button small' href={{publication.link}}>View Publication</a>
+        <a target='_blank' class='button small' href=https://ojs.aaai.org/index.php/AAAI/article/view/16081>View Publication</a>
       </div>
     </div>
   </div>
   <div class='two spacing'></div>
-{% endfor %}
+
+  <div class='full'>
+    <div class='row'>
+      <div class='large-6 columns'>
+        <h3>Edge Weighted Online Windowed Matching</h3>
+        <div class='spacing'></div>
+        <p> <big> This work proposed a novel online algorithmic model to study real-time decision making in matching markets such as mobility platforms. The model and algorithmic techniques from this paper have generated a lot of research interest in the area. </big> </p>
+      </div>
+      <div class='large-6 columns'>
+        <div class='two spacing'></div>
+        <ul class='info'>
+          
+            <li style="color:black;">
+              <big> <strong>Journal</strong>: Forthcoming in Mathematics of Operations Research </big>
+            </li>
+          
+          
+            <li style="color:black;">
+              <big> <strong>Conference</strong>: ACM Conference on Economics and Computation, 2019 </big>
+            </li>
+          
+        </ul>
+        <div class='two spacing'></div>
+        <a target='_blank' class='button small' href=https://dl.acm.org/doi/abs/10.1145/3328526.3329573>View Publication</a>
+      </div>
+    </div>
+  </div>
+  <div class='two spacing'></div>
+
 
 <div class='four spacing'></div>
+
+    </div>
+
+    <div id='footer'>
+  <div class='two spacing'></div>
+  <div class='row'>
+    <div class='large-3 medium-3 columns'>
+      <h1>
+        <a href='index.html'>
+          <img alt="" src="/images/logo_name.png" />
+        </a>
+      </h1>
+      <p>©2021 Turing Research Inc. <br> All rights reserved.</p>
+      <div class='spacing'></div>
+      <div class='spacing'></div>
+    </div>
+
+    <div class='large-3 medium-3 columns'>
+      <div class='spacing'></div>
+      <h4>Contact us</h4>
+      <ul>
+        <li>Email: hello@turingres.com</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script src="/javascripts/jquery.countTo.js" type="text/javascript"></script>
+<script src="/javascripts/jquery.appear.js" type="text/javascript"></script>
+<script src="/javascripts/jquery.validate.js" type="text/javascript"></script>
+<script src="/javascripts/jquery.sequence-min.js" type="text/javascript"></script>
+<script src="/javascripts/jquery.easing.1.3.js" type="text/javascript"></script>
+<script src="/javascripts/app.js" type="text/javascript"></script>
+
+
+  </body>
+
+</html>
