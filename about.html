@@ -39,21 +39,17 @@ patents:
     <div class='medium-11 columns'>
       <h4 style='color: #999'>Our Patents</h4>
       {% for patent in page.patents %}
-        <div class='full'>
-          <div class='row'>
-            <div class='large-6 columns'>
-              <h3>{{patent.title}}</h3>
-            </div>
-            <div class='large-6 columns'>
-              <ul class='info'>
-                {% if patent.status %}
-                  <li style="color:black;">
-                    <big> <strong>Status</strong>: {{patent.status}} </big>
-                  </li>
-                {% endif %}
-              </ul>
-            </div>
-          </div>
+        <div class='large-6 columns'>
+          <h3>{{patent.title}}</h3>
+        </div>
+        <div class='large-6 columns'>
+          <ul class='info'>
+            {% if patent.status %}
+              <li style="color:black;">
+                <big> <strong>Status</strong>: {{patent.status}} </big>
+              </li>
+            {% endif %}
+          </ul>
         </div>
       {% endfor %}
     </div>
