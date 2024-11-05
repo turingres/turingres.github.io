@@ -66,29 +66,35 @@ patents:
     <div class='medium-11 columns'>
       <h4 style='color: #999'>Our Publications</h4>
       <div class='spacing'></div>
-      {% for publication in page.publications %}
-        <div class='large-6 columns'>
-          <h3>{{publication.title}}</h3>
-          <div class='spacing'></div>
-          <p> <big> {{publication.abstract}} </big> </p>
+      <div class='full'>
+        <div class='row'>
+          <div class='medium-11 columns'>
+            {% for publication in page.publications %}
+              <div class='large-6 columns'>
+                <h3>{{publication.title}}</h3>
+                <div class='spacing'></div>
+                <p> <big> {{publication.abstract}} </big> </p>
+              </div>
+              <div class='large-6 columns'>
+                <ul class='info'>
+                  {% if publication.journal %}
+                    <li style="color:black;">
+                      <big> <strong>Journal</strong>: {{publication.journal}} </big>
+                    </li>
+                  {% endif %}
+                  {% if publication.conference %}
+                    <li style="color:black;">
+                      <big> <strong>Conference</strong>: {{publication.conference}} </big>
+                    </li>
+                  {% endif %}
+                </ul>
+                <div class='two spacing'></div>
+                <a target='_blank' class='button small' href={{publication.link}}>View Publication</a>
+              </div>
+            {% endfor %}
+          </div>
         </div>
-        <div class='large-6 columns'>
-          <ul class='info'>
-            {% if publication.journal %}
-              <li style="color:black;">
-                <big> <strong>Journal</strong>: {{publication.journal}} </big>
-              </li>
-            {% endif %}
-            {% if publication.conference %}
-              <li style="color:black;">
-                <big> <strong>Conference</strong>: {{publication.conference}} </big>
-              </li>
-            {% endif %}
-          </ul>
-          <div class='two spacing'></div>
-          <a target='_blank' class='button small' href={{publication.link}}>View Publication</a>
-        </div>
-      {% endfor %}
+      </div>
     </div>
   </div>
 </div>
