@@ -66,10 +66,10 @@ patents:
     <div class='medium-11 columns'>
       <h4 style='color: #999'>Our Publications</h4>
       <div class='spacing'></div>
-      <div class='full'>
-        <div class='row'>
-          <div class='medium-11 columns'>
-            {% for publication in page.publications %}
+      {% for publication in page.publications %}
+        <div class='full'>
+          <div class='row'>
+            <div class='medium-11 columns'>
               <div class='large-6 columns'>
                 <h3>{{publication.title}}</h3>
                 <div class='spacing'></div>
@@ -91,10 +91,10 @@ patents:
                 <div class='two spacing'></div>
                 <a target='_blank' class='button small' href={{publication.link}}>View Publication</a>
               </div>
-            {% endfor %}
+            </div>
           </div>
         </div>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </div>
