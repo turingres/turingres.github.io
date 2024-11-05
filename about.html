@@ -11,10 +11,13 @@ publications:
   - title: Edge Weighted Online Windowed Matching
     abstract: 'This work proposed a novel online algorithmic model to study real-time decision making in matching markets
       such as mobility platforms. The model and algorithmic techniques from this paper have generated a lot of research interest in the area.'
-    journal: Forthcoming in Mathematics of Operations Research
+    journal: Mathematics of Operations Research
     conference: ACM Conference on Economics and Computation, 2019
     link: https://dl.acm.org/doi/abs/10.1145/3328526.3329573
 
+patents:
+  - title: 'When Hashing Met Matching: Efficient spatio-temporal search for ridesharing'
+    status: Pending
 ---
 
 <div class='one spacing'></div>
@@ -35,13 +38,33 @@ publications:
 
 <div class='full'>
   <div class='row'>
-    <h4 style='color: #999'>Patents</h4>
+    <h4 style='color: #999'>Our Patents</h4>
   </div>
 </div>
 
+{% for patent in page.patents %}
+  <div class='full'>
+    <div class='row'>
+      <div class='large-6 columns'>
+        <h3>{{patent.title}}</h3>
+      </div>
+      <div class='large-6 columns'>
+        <div class='spacing'></div>
+        <ul class='info'>
+          {% if patent.status %}
+            <li style="color:black;">
+              <big> <strong>Status</strong>: {{patent.status}} </big>
+            </li>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+
 <div class='full'>
   <div class='row'>
-    <h4 style='color: #999'>Sample Publications</h4>
+    <h4 style='color: #999'>Our Publications</h4>
   </div>
 </div>
 
