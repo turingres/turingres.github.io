@@ -2672,7 +2672,7 @@ body {
   background-color: rgba(255, 255, 255, 0.7);
 }
 .modSectionHeader .special-title h2 {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   display: inline-block;
 }
 .modSectionHeader .special-title h2::after {
