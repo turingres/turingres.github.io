@@ -60,7 +60,8 @@ hr {
 }
 
 .full {
-  padding: 80px 0 0;
+  /* padding: 80px 0 0; */
+  padding: 20px 0 0;
   background-size: cover;
   background-position: 50% 50%;
 }
