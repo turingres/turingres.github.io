@@ -78,6 +78,7 @@ patents:
     <div class='medium-16 columns'>
       <h4 style='color: #999'>Got patents?</h4>
       {% for patent in page.patents %}
+        <div class='two spacing'></div>
         <div class='no-padding full'>
           <div class='row'>
             <div class='medium-16 columns'>
@@ -108,6 +109,7 @@ patents:
     <div class='medium-16 columns'>
       <h4 style='color: #999'>Got publications?</h4>
       {% for publication in page.publications %}
+        <div class='two spacing'></div>
         <div class='no-padding full'>
           <div class='row'>
             <div class='medium-16 columns'>
@@ -120,12 +122,12 @@ patents:
                 <ul class='info'>
                   {% if publication.journal %}
                     <li style="color:black;">
-                      <font face="candara"> <big> Journal:  <strong> {{publication.journal}} </strong> </font>
+                      <font face="garamond"> <big> Journal:  <strong> {{publication.journal}} </strong> </font>
                     </li>
                   {% endif %}
                   {% if publication.conference %}
                     <li style="color:black;">
-                      <font face="geneva"> <big> Conference: <strong> {{publication.conference}} </strong> </big> </font>
+                      <font face="optima"> <big> Conference: <strong> {{publication.conference}} </strong> </big> </font>
                     </li>
                   {% endif %}
                 </ul>
