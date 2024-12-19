@@ -3,7 +3,7 @@ layout: default
 section_id: about
 
 publications:
-  - title: 'When Hashing Met Matching: Efficient spatio-temporal search for ridesharing'
+  - title: 'When Hashing Met Matching: Efficient Spatio-Temporal Search for Ridesharing'
     summary: 'We introduced the powerful AI technique of Locality Senitive Hashing
       to aid real-time urban-scale on-demand mobility optimization.'
     conference: 'AAAI Conference on Artificial Intelligence, 2021'
@@ -88,7 +88,7 @@ patents:
                 <ul class='info'>
                   {% if patent.status %}
                     <li style="color:black;">
-                      <p style='color: #999'> <big>Status:</big> </p> <p> <big> {{patent.status}} </big> </p>
+                      <big>Status: <strong> {{patent.status}} </strong> </big>
                     </li>
                   {% endif %}
                 </ul>
@@ -119,12 +119,12 @@ patents:
                 <ul class='info'>
                   {% if publication.journal %}
                     <li style="color:black;">
-                      <big> <strong>Journal</strong>: {{publication.journal}} </big>
+                      <big> Journal: <strong> {{publication.journal}} </strong> </big>
                     </li>
                   {% endif %}
                   {% if publication.conference %}
                     <li style="color:black;">
-                      <big> <strong>Conference</strong>: {{publication.conference}} </big>
+                      <big> Conference: <strong> {{publication.conference}} </strong> </big>
                     </li>
                   {% endif %}
                 </ul>
