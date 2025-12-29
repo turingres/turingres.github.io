@@ -71,10 +71,11 @@ slides:
           <div class='buttons-wrapper {{slide.buttons.animation}}' style=''>
             <div class='row'>
               <div class='{{slide.buttons.class}} columns'>
-                <div class='four spacing'></div>
+                <div class='two spacing'></div>
                 {% for button in slide.buttons.items %}
                   <!-- <a target="_blank" class='button {{button.class}}' href='{{button.url}}'>{{button.text}}</a> -->
                   <a class='button {{button.class}}' href='{{button.url}}'>{{button.text}}</a>
+                  <div class='four spacing'></div>
                 {% endfor %}
               </div>
             </div>
