@@ -1,4 +1,4 @@
-- name: Home
+- name: About
   path: index.html
   section_id: home
 - name: Research
