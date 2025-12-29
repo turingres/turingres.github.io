@@ -1,6 +1,0 @@
-- name: About
-  path: index.html
-  section_id: about
-- name: Research
-  path: research.html
-  section_id: research
