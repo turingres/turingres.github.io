@@ -4,16 +4,17 @@ section_id: about
 slides:
   - bg: /images/square.png
     title:
-      text:  We build efficient and scalable solutions to hard optimization problems for real-world applications such as logistics and transportation. <br> <br> Mathematical intelligence powering our solutions is derived by synthesizing AI and optimization algorithms.
+      text:  <font size="+2"> AI powered solutions to hard optimization problems for large scale applications. </font>
       animation: bottom-to-top
       class: large-8 medium-11
-    <!--buttons:
+    buttons:
       animation: bottom-to-top
       class: medium-12
       items:
-        - text: Learn more!
+        - text: Logistics
           url: about.html
-          class: boxed -->
+          class: boxed
+        - text: Transportation
 ---
 
 <div class='advanced mod modDefaultSlider'>
@@ -60,7 +61,7 @@ slides:
             <div class='title {{slide.title.animation}}' style='color: rgb(255, 255, 255);'>
               <div class='row'>
                 <!-- <div class='{{slide.title.class}} columns'> -->
-                  <h3>{{slide.title.text}}</h3>
+                  <h2>{{slide.title.text}}</h2>
                 <!-- </div> -->
               </div>
             </div>
@@ -70,8 +71,12 @@ slides:
               <div class='{{slide.buttons.class}} columns'>
                 <div class='two spacing'></div>
                 {% for button in slide.buttons.items %}
-                  <!-- <a target="_blank" class='button {{button.class}}' href='{{button.url}}'>{{button.text}}</a> -->
-                  <a class='button {{button.class}}' href='{{button.url}}'>{{button.text}}</a>
+                  {% if button.url %}
+                    <!-- <a target="_blank" class='button {{button.class}}' href='{{button.url}}'>{{button.text}}</a> -->
+                    <a class='button {{button.class}}' href='{{button.url}}'>{{button.text}}</a>
+                  {% else %}
+                    {{button.text}}
+                  {% endif %}
                 {% endfor %}
               </div>
             </div>
