@@ -4,7 +4,7 @@ section_id: about
 slides:
   - bg: /images/square.png
     title:
-      text:  <font size="+2"> AI powered solutions to hard optimization problems for large scale applications. </font>
+      text:  <font size="+2"> AI powered solutions to hard optimization problems <br> for large scale applications. </font>
       animation: bottom-to-top
       class: large-8 medium-11
     buttons:
@@ -12,9 +12,11 @@ slides:
       class: medium-12
       items:
         - text: Logistics
-          url: about.html
+          url: index.html
           class: boxed
         - text: Transportation
+          url: index.html
+          class: boxed
 ---
 
 <div class='advanced mod modDefaultSlider'>
@@ -71,12 +73,8 @@ slides:
               <div class='{{slide.buttons.class}} columns'>
                 <div class='two spacing'></div>
                 {% for button in slide.buttons.items %}
-                  {% if button.url %}
-                    <!-- <a target="_blank" class='button {{button.class}}' href='{{button.url}}'>{{button.text}}</a> -->
-                    <a class='button {{button.class}}' href='{{button.url}}'>{{button.text}}</a>
-                  {% else %}
-                    {{button.text}}
-                  {% endif %}
+                  <!-- <a target="_blank" class='button {{button.class}}' href='{{button.url}}'>{{button.text}}</a> -->
+                  <a class='button {{button.class}}' href='{{button.url}}'>{{button.text}}</a>
                 {% endfor %}
               </div>
             </div>
